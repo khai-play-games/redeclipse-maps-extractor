@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-echo $(dirname $0)/target
+echo ~/.redeclipse/maps
