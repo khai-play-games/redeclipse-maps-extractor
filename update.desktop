@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Update
+Comment=Update maps
+GenericName=Script
+Exec=gnome-terminal -x ./update.bash
+Icon=redeclipse
+Type=Script
+StartupNotify=true
+Categories=GNOME;GTK;Script;Game;
+Terminal=true
