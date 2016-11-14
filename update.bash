@@ -18,13 +18,13 @@ done
 echo FLATTENING...
 function flatten () (
   if [[ -d "$1" ]]
-  	then
-  	  echo '  d>' $1
-  	  for item in $(ls "$1")
-  	  do
-  	    flatten "$1/$item"
-  	  done
-  	  rmdir "$1"
+    then
+      echo '  d>' $1
+      for item in $(ls "$1")
+      do
+        flatten "$1/$item"
+      done
+      rmdir "$1"
   elif [[ -f "$1" ]]
     then
       echo '  f>' $1
