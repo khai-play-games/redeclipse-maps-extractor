@@ -4,6 +4,7 @@ wdir="$(pwd)"
 target="$(./target.bash)"
 
 echo CLEANING...
+[[ -d "$target" ]] || mkdir -p "$target" || exit $*
 cd "$target"
 rm -rvf *
 
@@ -37,3 +38,5 @@ do
     then flatten "$target/$item"
   fi
 done
+
+echo DONE.
