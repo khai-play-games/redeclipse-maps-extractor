@@ -1,8 +1,8 @@
 #! /usr/bin/env xdg-open
 [Desktop Entry]
-Encoding=UTF-8
-Version=1.0
+Version=2.0
 Name=Update
-Exec=./update.bash
+Exec=/usr/bin/env bash -ic  "cd \"`dirname %k`\"; ./update.bash; read"
 Icon=redeclipse
 Terminal=true
+Type=Application
